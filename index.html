@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유동혁 - 경제학 기반의 회계 전문가</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 인트로 섹션 */
+        .intro-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
+        }
+
+        .intro-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .intro-section p {
+            font-size: 1.3rem;
+            color: #f97316;
+            font-weight: 600;
+        }
+
+        /* 카드 공통 스타일 */
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: #1e3a8a;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f97316;
+            padding-bottom: 10px;
+        }
+
+        /* 자기소개 섹션 */
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* 학력/경력 섹션 */
+        .education-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .education-item h3 {
+            color: #1e3a8a;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .education-item ul {
+            list-style: none;
+        }
+
+        .education-item li {
+            background: #f0f9ff;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            border-left: 4px solid #f97316;
+        }
+
+        /* 핵심 역량 섹션 */
+        .skills-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-item {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .skill-item h3 {
+            color: #1e3a8a;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-item h3::before {
+            content: "●";
+            color: #f97316;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .skill-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* 푸터 */
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+        }
+
+        footer a {
+            color: #f97316;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .intro-section h1 {
+                font-size: 2.2rem;
+            }
+
+            .intro-section p {
+                font-size: 1.1rem;
+            }
+
+            .education-section {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-section {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <!-- 인트로 섹션 -->
+    <section class="intro-section">
+        <h1>유동혁</h1>
+        <p>경제학 기반의 회계 전문가</p>
+    </section>
+
+    <div class="container">
+        <!-- 자기소개 섹션 -->
+        <div class="card about-section">
+            <h2>자기소개</h2>
+            <p>
+                경제학을 공부하면서 회계분야도 같이 공부할 기회가 있었는데, 그때 회계 프로그램을 사용했을 때 재미를 느껴서 회계학에 관심을 가지게 되었습니다. 
+                경제학적 사고를 바탕으로 한 체계적인 접근과 실무 중심의 회계 지식을 결합하여, 신뢰할 수 있는 회계 업무를 수행하고자 합니다.
+            </p>
+        </div>
+
+        <!-- 학력/경력 섹션 -->
+        <div class="card">
+            <h2>학력 및 자격증</h2>
+            <div class="education-section">
+                <div class="education-item">
+                    <h3>학력</h3>
+                    <ul>
+                        <li>강릉원주대학교 경제학과 졸업 (2024.02)</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>자격증</h3>
+                    <ul>
+                        <li>전산회계 1급</li>
+                        <li>전산회계 2급</li>
+                        <li>전산세무 2급</li>
+                        <li>ERP정보관리사 회계 1급</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 핵심 역량 섹션 -->
+        <div class="card">
+            <h2>핵심 역량</h2>
+            <div class="skills-section">
+                <div class="skill-item">
+                    <h3>회계 전문성</h3>
+                    <p>전산회계, 전산세무, ERP정보관리사 등 다양한 자격증을 취득했으며, 더존, 케이랩, 시스템에버 등 다양한 회계프로그램을 다룰 수 있습니다.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>학습능력</h3>
+                    <p>대학교 경제학과 공부와 회계 자격증 시험을 병행하여 성과를 낸 멀티테스킹 능력과 알 때까지 공부하는 끈기를 가지고 있습니다.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>성실함</h3>
+                    <p>정해진 시간을 철저하게 지키며, 규칙적인 생활 패턴과 매일 꾸준히 공부하는 습관을 통해 책임감 있게 목표를 달성합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>연락처: <a href="mailto:ilro65@naver.com">ilro65@naver.com</a></p>
+    </footer>
+</body>
+</html>
